@@ -1,3 +1,13 @@
+# My Solution
+
+To run the project just run the following command with the desired window size and input file:
+
+	python unbabel_cli.py --input_file events.json --window_size 10
+	
+This solution is fairly simple and aims to retrieve each event from the file and map it to a Python object.
+After this mapping, there's only just the need to compute the moving average. Because we're using dates as the index I've used the `datetime` module from Python so that moving the window is a little easier. After each value is computed it's stored in a list of events that soon are dumped to an `output.json` file.
+
+
 # Backend Engineering Challenge
 
 
